@@ -5,5 +5,8 @@ class WorkoutData {
 Workout data structure
 
   */
-  List<Workout> workoutList = [];
+  List<Workout> workoutList = [
+    //default workout
+    
+  ];
 }
