@@ -19,8 +19,10 @@ Workout data structure
   List<Workout> getWorkoutList() {
     return workoutList;
   }
+
   //add a workout
-  void addWorkout(String name){
-    
+  void addWorkout(String name) {
+    //add a new workout
+    workoutList.add(Workout(name: name, exercises: []));
   }
 }
