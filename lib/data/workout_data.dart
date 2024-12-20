@@ -19,4 +19,8 @@ Workout data structure
   List<Workout> getWorkoutList() {
     return workoutList;
   }
+  //add a workout
+  void addWorkout(String name){
+    
+  }
 }
