@@ -1,3 +1,4 @@
+import 'package:work_out_app/model/exercise.dart';
 import 'package:work_out_app/model/workout.dart';
 
 class WorkoutData {
@@ -7,6 +8,15 @@ Workout data structure
   */
   List<Workout> workoutList = [
     //default workout
-    Workout(name: "Upper Body", exercises: [])
+    Workout(
+      name: "Upper Body",
+      exercises: [
+        Exercise(name: "Bicep curls", weight: "20", reps: "12", sets: "5"),
+      ],
+    ),
   ];
+  //get workoutlist
+  List<Workout> getWorkoutList() {
+    return workoutList;
+  }
 }
