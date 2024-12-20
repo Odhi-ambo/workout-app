@@ -10,5 +10,5 @@ class Exercise {
       required this.weight,
       required this.sets,
       required this.reps,
-      required this.isCompleted});
+      this.isCompleted = false});
 }
