@@ -25,7 +25,8 @@ Workout data structure
     //add a new workout
     workoutList.add(Workout(name: name, exercises: []));
   }
-  //add an exercise to a workout
-  void addExercise(String workoutName, String exerciseName){}
 
+  //add an exercise to a workout
+  void addExercise(
+      String workoutName, String exerciseName, String weight, String reps) {}
 }
