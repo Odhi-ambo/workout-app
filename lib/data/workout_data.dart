@@ -7,6 +7,6 @@ Workout data structure
   */
   List<Workout> workoutList = [
     //default workout
-    
+    Workout(name: "Upper Body", exercises: [])
   ];
 }
