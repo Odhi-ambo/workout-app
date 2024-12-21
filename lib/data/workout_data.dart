@@ -36,5 +36,7 @@ Workout data structure
         Exercise(name: exerciseName, weight: weight, sets: sets, reps: reps));
   }
   //check off exercise
-  void checkOffExercise(String workoutName, String exerciseName){}
+  void checkOffExercise(String workoutName, String exerciseName){
+    //find the relevant workout and relevant exercise
+  }
 }
