@@ -27,6 +27,10 @@ Workout data structure
   }
 
   //add an exercise to a workout
-  void addExercise(
-      String workoutName, String exerciseName, String weight, String reps, String sets) {}
+  void addExercise(String workoutName, String exerciseName, String weight,
+      String reps, String sets) {
+    //find the relevant workout
+    Workout relevantWorkout =
+        workoutList.firstWhere((workout) => workout.name == workoutName);
+  }
 }
