@@ -32,5 +32,7 @@ Workout data structure
     //find the relevant workout
     Workout relevantWorkout =
         workoutList.firstWhere((workout) => workout.name == workoutName);
+    relevantWorkout.exercises.add(
+        Exercise(name: exerciseName, weight: weight, sets: sets, reps: reps));
   }
 }
