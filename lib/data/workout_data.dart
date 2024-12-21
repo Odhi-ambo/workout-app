@@ -35,4 +35,6 @@ Workout data structure
     relevantWorkout.exercises.add(
         Exercise(name: exerciseName, weight: weight, sets: sets, reps: reps));
   }
+  //check off exercise
+  
 }
