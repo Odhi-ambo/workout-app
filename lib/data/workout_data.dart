@@ -38,7 +38,8 @@ Workout data structure
   void checkOffExercise(String workoutName, String exerciseName){
     //find the relevant workout and relevant exercise
     Workout getRelevantWorkout(String workoutName){
-      
+       Workout relevantWorkout =
+        workoutList.firstWhere((workout) => workout.name == workoutName);
     }
   }
 }
