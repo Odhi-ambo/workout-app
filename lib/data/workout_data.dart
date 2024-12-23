@@ -30,16 +30,25 @@ Workout data structure
   void addExercise(String workoutName, String exerciseName, String weight,
       String reps, String sets) {
     //find the relevant workout
-   
+    Workout relevantWorkout =
+        workoutList.firstWhere((workout) => workout.name == workoutName);
+
     relevantWorkout.exercises.add(
         Exercise(name: exerciseName, weight: weight, sets: sets, reps: reps));
   }
+
   //check off exercise
-  void checkOffExercise(String workoutName, String exerciseName){
+  void checkOffExercise(String workoutName, String exerciseName) {
     //find the relevant workout and relevant exercise
-    Workout getRelevantWorkout(String workoutName){
-       Workout relevantWorkout =
-        workoutList.firstWhere((workout) => workout.name == workoutName);
-    }
   }
+  //get length of a given workout
+
+  //return relevant workout object, given a workout name
+  Workout getRelevantWorkout(String workoutName) {
+    Workout relevantWorkout =
+        workoutList.firstWhere((workout) => workout.name == workoutName);
+    return relevantWorkout;
+  }
+
+  //return relevant exercise object given wn+exn
 }
