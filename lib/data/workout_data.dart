@@ -49,4 +49,13 @@ Workout data structure
   }
 
   //return relevant exercise object given wn+exn
+  Exercise getRelevantExercise(String workName, String exerciseName) {
+    //find relevant workout first
+    Workout relevantWorkout = getRelevantWorkout(workName);
+    //then find relevant exercise
+    Exercise relevantExercise = relevantWorkout.exercises
+        .firstWhere((exercise) => exercise.name == exerciseName);
+
+    return relevantExercise;
+  }
 }
