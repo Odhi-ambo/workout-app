@@ -37,6 +37,8 @@ Workout data structure
   //check off exercise
   void checkOffExercise(String workoutName, String exerciseName){
     //find the relevant workout and relevant exercise
-    
+    Workout getRelevantWorkout(String workoutName){
+      
+    }
   }
 }
