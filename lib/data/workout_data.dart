@@ -42,6 +42,8 @@ Workout data structure
     Workout relevantWorkout = getRelevantWorkout(workoutName);
     relevantWorkout.exercises.add(
         Exercise(name: exerciseName, weight: weight, sets: sets, reps: reps));
+
+    notifyListeners();
   }
 
   //check off exercise
