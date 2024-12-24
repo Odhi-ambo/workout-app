@@ -53,6 +53,7 @@ Workout data structure
 
     //check boolean to show user completed exercise
     relevantExercise.isCompleted = !relevantExercise.isCompleted;
+    notifyListeners();
   }
   //get length of a given workout
 
