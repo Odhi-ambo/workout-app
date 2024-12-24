@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:work_out_app/model/exercise.dart';
 import 'package:work_out_app/model/workout.dart';
 
-class WorkoutData {
+class WorkoutData extends ChangeNotifier {
   /*
 Workout data structure
 
@@ -31,6 +32,7 @@ Workout data structure
   void addWorkout(String name) {
     //add a new workout
     workoutList.add(Workout(name: name, exercises: []));
+    
   }
 
   //add an exercise to a workout
