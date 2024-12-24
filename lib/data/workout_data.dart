@@ -39,6 +39,9 @@ Workout data structure
   void checkOffExercise(String workoutName, String exerciseName) {
     //find the relevant workout and relevant exercise
     Exercise relevantExercise = getRelevantExercise(workoutName, exerciseName);
+
+    //check boolean to show user completed exercise
+    relevantExercise.isCompleted = !relevantExercise.isCompleted;
   }
   //get length of a given workout
 
