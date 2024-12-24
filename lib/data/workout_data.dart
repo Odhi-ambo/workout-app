@@ -32,7 +32,7 @@ Workout data structure
   void addWorkout(String name) {
     //add a new workout
     workoutList.add(Workout(name: name, exercises: []));
-    
+    notifyListeners();
   }
 
   //add an exercise to a workout
