@@ -20,6 +20,13 @@ Workout data structure
     return workoutList;
   }
 
+  //get length of a given workout
+  int numberOfExercisesInWorkout(String workoutName) {
+    Workout relevantWorkout = getRelevantWorkout(workoutName);
+
+    return relevantWorkout.exercises.length;
+  }
+
   //add a workout
   void addWorkout(String name) {
     //add a new workout
