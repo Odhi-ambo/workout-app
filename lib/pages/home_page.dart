@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Workout Tracker"),
       ),
-      body: ListView.builder(itemBuilder: (context, index) => ListTile()),
+      body: ListView.builder(itemBuilder: (context, index) => const ListTile()),
     );
   }
 }
