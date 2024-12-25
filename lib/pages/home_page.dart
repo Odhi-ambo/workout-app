@@ -5,9 +5,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
-        title:Text("Workout Tracker"),
+        title: const Text("Workout Tracker"),
       ),
       body: ListView.builder(itemBuilder: (context, index) => ListTile()),
     );
