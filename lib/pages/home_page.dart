@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   void createNewWorkout() {
     showDialog(
         context: context,
-        builder: (context) => AlertDialog(
+        builder: (context) =>const  AlertDialog(
               title: Text('create new workout'),
             ),
             );
