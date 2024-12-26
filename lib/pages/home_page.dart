@@ -2,10 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:work_out_app/data/workout_data.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
-  void createNewWorkout() {}
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  void createNewWorkout() {
+    showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+              title: Text('create new workout'),
+            ),
+            );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +28,7 @@ class HomePage extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: createNewWorkout,
-          child:const  Icon(Icons.add),
+          child: const Icon(Icons.add),
         ),
         body: ListView.builder(
           itemCount: value.getWorkoutList().length,
