@@ -24,6 +24,7 @@ class _HomePageState extends State<HomePage> {
               child: Text('Save'),
               ),
              // cancel Button
+             MaterialButton(onPressed: cancel,child: Text('Cancel'),)
 
               ],
             ),
@@ -32,6 +33,8 @@ class _HomePageState extends State<HomePage> {
             
   }
   void save(){}
+
+  void cancel(){}
 
   @override
   Widget build(BuildContext context) {
