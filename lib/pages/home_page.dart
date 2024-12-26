@@ -15,16 +15,23 @@ class _HomePageState extends State<HomePage> {
   void createNewWorkout() {
     showDialog(
         context: context,
-        builder: (context) =>const  AlertDialog(
+        builder: (context) =>  AlertDialog(
               title: Text('create new workout'),
               content: TextField(),
               actions: [
-              //buttons
-              
+              //save buttons
+              MaterialButton(onPressed: save,
+              child: Text('Save'),
+              ),
+             // cancel Button
+
               ],
             ),
+            
             );
+            
   }
+  void save(){}
 
   @override
   Widget build(BuildContext context) {
