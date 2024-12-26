@@ -10,31 +10,32 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   //create new workout
   void createNewWorkout() {
     showDialog(
-        context: context,
-        builder: (context) =>  AlertDialog(
-              title: Text('create new workout'),
-              content: TextField(),
-              actions: [
-              //save buttons
-              MaterialButton(onPressed: save,
-              child: Text('Save'),
-              ),
-             // cancel Button
-             MaterialButton(onPressed: cancel,child: Text('Cancel'),)
-
-              ],
-            ),
-            
-            );
-            
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('create new workout'),
+        content: const TextField(),
+        actions: [
+          //save buttons
+          MaterialButton(
+            onPressed: save,
+            child: Text('Save'),
+          ),
+          // cancel Button
+          MaterialButton(
+            onPressed: cancel,
+            child: Text('Cancel'),
+          )
+        ],
+      ),
+    );
   }
-  void save(){}
 
-  void cancel(){}
+  void save() {}
+
+  void cancel() {}
 
   @override
   Widget build(BuildContext context) {
