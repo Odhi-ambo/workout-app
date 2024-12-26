@@ -21,12 +21,12 @@ class _HomePageState extends State<HomePage> {
           //save buttons
           MaterialButton(
             onPressed: save,
-            child: Text('Save'),
+            child:const Text('Save'),
           ),
           // cancel Button
           MaterialButton(
             onPressed: cancel,
-            child: Text('Cancel'),
+            child: const Text('Cancel'),
           )
         ],
       ),
