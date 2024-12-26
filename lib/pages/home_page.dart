@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: createNewWorkout,
-          child: Icon(Icons.add),
+          child:const  Icon(Icons.add),
         ),
         body: ListView.builder(
           itemCount: value.getWorkoutList().length,
