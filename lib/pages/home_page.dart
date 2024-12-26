@@ -10,6 +10,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+  //create new workout
   void createNewWorkout() {
     showDialog(
         context: context,
