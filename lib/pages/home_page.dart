@@ -18,6 +18,10 @@ class _HomePageState extends State<HomePage> {
         builder: (context) =>const  AlertDialog(
               title: Text('create new workout'),
               content: TextField(),
+              actions: [
+              //buttons
+              
+              ],
             ),
             );
   }
