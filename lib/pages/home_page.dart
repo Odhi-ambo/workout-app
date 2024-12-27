@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
     return Consumer<WorkoutData>(
       builder: (context, value, child) => Scaffold(
         appBar: AppBar(
-          title: Center(child: const Text("M & B Fitness Galore")),
+          title: const Center(child:  Text("M & B Fitness Galore")),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: createNewWorkout,
