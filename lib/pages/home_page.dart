@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
           //save buttons
           MaterialButton(
             onPressed: save,
-            child:const Text('Save'),
+            child: const Text('Save'),
           ),
           // cancel Button
           MaterialButton(
@@ -35,7 +35,9 @@ class _HomePageState extends State<HomePage> {
 
   void save() {}
 
-  void cancel() {}
+  void cancel() {
+    Navigator.pop(context);
+  }
 
   @override
   Widget build(BuildContext context) {
