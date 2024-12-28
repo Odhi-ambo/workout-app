@@ -12,7 +12,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Upper Body'),),
+      appBar: AppBar(title: Text(widget.workoutName),),
     );
   }
 }
