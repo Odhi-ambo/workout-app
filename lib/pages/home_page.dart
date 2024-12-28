@@ -26,7 +26,6 @@ class _HomePageState extends State<HomePage> {
           MaterialButton(
             onPressed: save,
             child: const Text('Save'),
-          
           ),
           // cancel Button
           MaterialButton(
@@ -40,8 +39,10 @@ class _HomePageState extends State<HomePage> {
 
   void save() {
     //get workout name from text controller
+    String newWorkoutName = newWorkoutNameController.text;
 
     //add workout to workoutdata list
+    Provider.of<WorkoutData>(context, listen: false).addWorkout(newWorkoutName);
   }
 
   void cancel() {
