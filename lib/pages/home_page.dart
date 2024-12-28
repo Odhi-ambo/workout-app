@@ -56,6 +56,7 @@ class _HomePageState extends State<HomePage> {
   void clear() {
     newWorkoutNameController.clear();
   }
+  void goToWorkoutPage(){}
 
   @override
   Widget build(BuildContext context) {
@@ -72,8 +73,12 @@ class _HomePageState extends State<HomePage> {
           itemCount: value.getWorkoutList().length,
           itemBuilder: (context, index) => ListTile(
             title: Text(value.getWorkoutList()[index].name),
+            trailing:IconButton(
+              icon: Icon(Icons.arrow_forward),
+              onPressed: goToWorkoutPage,
           ),
         ),
+      ),
       ),
     );
   }
