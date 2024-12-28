@@ -60,9 +60,11 @@ class _HomePageState extends State<HomePage> {
 
   void goToWorkoutPage(String workoutName) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => WorkoutPage(
-          workoutName: workoutName,
-        )));
+        context,
+        MaterialPageRoute(
+            builder: (context) => WorkoutPage(
+                  workoutName: workoutName,
+                )));
   }
 
   @override
@@ -82,7 +84,8 @@ class _HomePageState extends State<HomePage> {
             title: Text(value.getWorkoutList()[index].name),
             trailing: IconButton(
               icon: const Icon(Icons.arrow_forward),
-              onPressed: () => goToWorkoutPage(value.getWorkoutList()[index].name),
+              onPressed: () =>
+                  goToWorkoutPage(value.getWorkoutList()[index].name),
             ),
           ),
         ),
