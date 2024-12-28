@@ -11,19 +11,22 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   //text controller
-  final newWorkoutController = TextEditingController();
+  final newWorkoutNameController = TextEditingController();
   //create new workout
   void createNewWorkout() {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('create new workout'),
-        content: const TextField(),
+        content: TextField(
+          controller: newWorkoutNameController,
+        ),
         actions: [
           //save buttons
           MaterialButton(
             onPressed: save,
             child: const Text('Save'),
+          
           ),
           // cancel Button
           MaterialButton(
