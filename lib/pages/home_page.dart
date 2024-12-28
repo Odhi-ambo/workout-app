@@ -50,6 +50,11 @@ class _HomePageState extends State<HomePage> {
     Navigator.pop(context);
   }
 
+  //clear controller
+  void clear() {
+    newWorkoutNameController.clear();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Consumer<WorkoutData>(
