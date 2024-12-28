@@ -38,7 +38,11 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  void save() {}
+  void save() {
+    //get workout name from text controller
+
+    //add workout to workoutdata list
+  }
 
   void cancel() {
     Navigator.pop(context);
