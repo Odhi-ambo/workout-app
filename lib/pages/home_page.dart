@@ -45,7 +45,9 @@ class _HomePageState extends State<HomePage> {
     //add workout to workoutdata list
     Provider.of<WorkoutData>(context, listen: false).addWorkout(newWorkoutName);
     Navigator.pop(context);
+
     clear();
+    Navigator.pop(context);
   }
 
   void cancel() {
