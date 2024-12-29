@@ -14,19 +14,19 @@ class _WorkoutPageState extends State<WorkoutPage> {
   @override
   Widget build(BuildContext context) {
     return Consumer<WorkoutData>(
-      builder: (context, value, child) => 
-      Scaffold(
+      builder: (context, value, child) => Scaffold(
         appBar: AppBar(
           title: Text(widget.workoutName),
         ),
         body: ListView.builder(
-            itemBuilder: (context, index) => ListTile(
-                title: Text(value
-                    .getRelevantWorkout(widget.workoutName)
-                    .exercises[index]
-                    .name),
-                    ),
-                    ),
+          itemCount: value.numberOfExercisesInWorkout(widget.workoutName),
+          itemBuilder: (context, index) => ListTile(
+            title: Text(value
+                .getRelevantWorkout(widget.workoutName)
+                .exercises[index]
+                .name),
+          ),
+        ),
       ),
     );
   }
