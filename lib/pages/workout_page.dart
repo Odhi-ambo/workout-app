@@ -12,7 +12,10 @@ class _WorkoutPageState extends State<WorkoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(widget.workoutName),),
+      appBar: AppBar(
+        title: Text(widget.workoutName),
+      ),
+      body: ListView.builder(itemBuilder: (context, index) => ListTile()),
     );
   }
 }
